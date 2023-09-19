@@ -130,14 +130,16 @@ function AmmaSetores(){
     var self = this;
      
       this.data = loadTable(
-      './data/amma/AuditoriaOnline2023_Analises_01_08.csv', 'csv', 'header',
+      //'./data/amma/AuditoriaOnline2023_Analises_01_08.csv', 'csv', 'header',
+      'https://drive.google.com/file/d/1eYWRTz-vDmD5THjiZWyiecCb9QZu9Dde/view?usp=sharing', 'csv', 'header',
       // Callback function to set the value
       // this.loaded to true.
       function(table) {
         self.loaded = true;
       });
       
-     this.setores = loadTable('./data/amma/LISTADESETORES.csv', 'csv');
+     //this.setores = loadTable('./data/amma/LISTADESETORES.csv', 'csv');
+   this.setores = loadTable('https://drive.google.com/file/d/1hpB9mfX2KV3jAsYkJDk9kOBIpl9lJp-9/view?usp=sharing', 'csv');
   
       
   };   
